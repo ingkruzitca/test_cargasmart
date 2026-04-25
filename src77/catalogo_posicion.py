@@ -48,7 +48,7 @@ def menu():
 5. Salir
 """)
         opcion = input("Elige una opción: ")
-
+        # OJO_ cambiar por un match case
         if opcion == "1":
             nombre = input("Nombre del jugador: ")
             posicion = input("Posición (ej: defensa, mediocampo, delantero, portero): ")
