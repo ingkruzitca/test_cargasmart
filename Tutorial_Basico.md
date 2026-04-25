@@ -17,3 +17,17 @@ PS C:\User\gucr6> wsl --list --online
 ```
 
 Nos aparecerá una salida como la siguiente:
+
+
+Instalamos la versión deseada, en nuestro caso para facilitar la descarga y tener lo mínimo necesario la distro Debian:
+
+```PowerShell
+PS C:\User\gucr6> wsl --install Debian
+```
+
+Iniciará la descarga e instalación, luego nos pedirá definir un usuario y su respectiva password:
+
+
+
+
+
