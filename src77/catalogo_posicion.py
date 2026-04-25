@@ -49,28 +49,29 @@ def menu():
 """)
         opcion = input("Elige una opción: ")
 
-        if opcion == "1":
-            nombre = input("Nombre del jugador: ")
-            posicion = input("Posición (ej: defensa, mediocampo, delantero, portero): ")
-            equipo.agregar_jugador(nombre, posicion)
+        match opcion:
+            case "1":
+                nombre = input("Nombre del jugador: ")
+                posicion = input("Posición (ej: defensa, mediocampo, delantero, portero): ")
+                equipo.agregar_jugador(nombre, posicion)
 
-        elif opcion == "2":
-            equipo.listar_jugadores()
+            case "2":
+                equipo.listar_jugadores()
 
-        elif opcion == "3":
-            nombre = input("Nombre del jugador a buscar: ")
-            equipo.buscar_jugador(nombre)
+            case "3":
+                nombre = input("Nombre del jugador a buscar: ")
+                equipo.buscar_jugador(nombre)
 
-        elif opcion == "4":
-            nombre = input("Nombre del jugador a eliminar: ")
-            equipo.eliminar_jugador(nombre)
+            case "4":
+                nombre = input("Nombre del jugador a eliminar: ")
+                equipo.eliminar_jugador(nombre)
 
-        elif opcion == "5":
-            print("Saliendo...")
-            break
+            case "5":
+                print("Saliendo...")
+                break
 
-        else:
-            print("Opción inválida, intenta de nuevo.")
+            case _:
+                print("Opción inválida, intenta de nuevo.")
 
 
 if __name__ == "__main__":
