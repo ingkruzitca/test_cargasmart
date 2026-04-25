@@ -28,6 +28,15 @@ PS C:\User\gucr6> wsl --install Debian
 Iniciará la descarga e instalación, luego nos pedirá definir un usuario y su respectiva password:
 
 
+uego que se complete la instalación, iniciará por primera vez WSL con la Distro seleccionada, probamos algunos comandos linux:
+
+![alt text](image.png)
+
+Con esto tendremos lo mínimo necesario, opcional si deseamos establecer una password al usuario root.
+
+```Bash
+ingcruz@DESKTOP:~$ sudo passwd root
+```
 
 
 
